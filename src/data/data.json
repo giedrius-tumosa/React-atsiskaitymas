@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "id": "545ddjdk",
+      "userEmail": "j.smith@gmail.com",
+      "userPassword": "pass2000"
+    }
+  ],
+  "posts": [
+    {
+      "id": "dddd",
+      "postTitle": "Rimi akcija bananams",
+      "postDescription": "Skubekite i Rimi kalvariju gatveje, Vilnius. Bananai tik 0.8 centu!"
+    },
+    {
+      "id": "aaaa",
+      "postTitle": "IKEA isparduoda baldus",
+      "postDescription": "Tik si savaitgali IKEA skelbia isparduodanti baldus 50% nuolaida."
+    }
+  ]
+}
