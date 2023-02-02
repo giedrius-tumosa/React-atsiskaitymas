@@ -1,12 +1,10 @@
 import "./styles/App.scss";
-import FormNewPost from "./components/forms/FormNewPost";
-import FormNewUser from "./components/forms/FormNewUser";
+import PostsDisplay from "./components/posts/PostsDisplay";
 
 function App() {
   return (
     <>
-      <FormNewPost />
-      <FormNewUser />
+      <PostsDisplay />
     </>
   );
 }
