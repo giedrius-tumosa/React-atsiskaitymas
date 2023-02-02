@@ -1,5 +1,20 @@
+import FormNewPost from "../forms/FormNewPost";
+import Heading from "../global/Heading";
+import styles from "./addPostPage.module.scss";
+
 const AddPostPage = () => {
-  return <h1>Add Post page</h1>;
+  return (
+    <>
+      <section className={styles.newPostSection}>
+        <Heading
+          tag="h2"
+          attributes={{ className: "formHeading" }}
+          textContent="Add new post here:"
+        />
+        <FormNewPost />
+      </section>
+    </>
+  );
 };
 
 export default AddPostPage;

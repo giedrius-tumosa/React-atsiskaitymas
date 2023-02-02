@@ -1,9 +1,9 @@
-const Image = (props) => {
+const FigureImage = (props) => {
   return (
-    <figure {...props.attributes}>
+    <figure className={props.className}>
       <img {...props.attributes} />
     </figure>
   );
 };
 
-export default Image;
+export default FigureImage;

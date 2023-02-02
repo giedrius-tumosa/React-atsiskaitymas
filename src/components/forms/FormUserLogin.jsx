@@ -30,7 +30,7 @@ const FormUserLogin = () => {
             id="userEmail"
             name="userEmail"
             onChange={handleInputChange}
-            reuired
+            required
             value={formInputs.userEmail}
           />
         </div>
@@ -42,7 +42,7 @@ const FormUserLogin = () => {
             id="userPassword"
             name="userPassword"
             onChange={handleInputChange}
-            reuired
+            required
             value={formInputs.userPassword}
           />
         </div>

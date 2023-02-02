@@ -1,0 +1,16 @@
+.newPostSection {
+  border: 1px solid blue;
+  animation: 1s ease-in-out expand;
+  overflow-y: hidden;
+  height: 300px;
+}
+
+@keyframes expand {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 300px;
+  }
+}
