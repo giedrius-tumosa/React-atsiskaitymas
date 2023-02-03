@@ -34,14 +34,3 @@ function App() {
 }
 
 export default App;
-
-/*
-TODO:
-*styling
-*patikrinti formu functionalities
-*readme file
-*mockups
-*klaidu stilius
-*pasibandyti kitokius route su login register puslapiais????
-*suziuret ar nera nenaudojamu variables
-*/
