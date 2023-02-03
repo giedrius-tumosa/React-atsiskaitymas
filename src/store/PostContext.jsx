@@ -7,7 +7,7 @@ const PostContext = createContext();
 const PostProvider = ({ children }) => {
   const [posts, setPosts] = useState([]);
   const [postsLoading, setPostsLoading] = useState(false);
-  const [postFetchErrors, setUserFetchErrors] = useState({
+  const [postFetchErrors, setPostFetchErrors] = useState({
     getError: "",
     postError: "",
   });
@@ -19,9 +19,9 @@ const PostProvider = ({ children }) => {
       if (!response.ok) throw Error("Posts could not be retrieved from the server. Try later.");
       const postsData = await response.json();
       setPosts(postsData);
-      setUserFetchErrors({ ...postFetchErrors, getError: "" });
+      setPostFetchErrors({ ...postFetchErrors, getError: "" });
     } catch (error) {
-      setUserFetchErrors({ ...postFetchErrors, getError: error.message });
+      setPostFetchErrors({ ...postFetchErrors, getError: error.message });
     } finally {
       setPostsLoading(false);
     }
@@ -38,16 +38,24 @@ const PostProvider = ({ children }) => {
         body: JSON.stringify(newPost),
       });
       if (!response.ok) throw Error("Error: could not upload a new post to the server. Try later");
-      setUserFetchErrors({ ...postFetchErrors, postError: "" });
+      setPostFetchErrors({ ...postFetchErrors, postError: "" });
     } catch (error) {
-      setUserFetchErrors({ ...postFetchErrors, postError: error.message });
+      setPostFetchErrors({ ...postFetchErrors, postError: error.message });
       setPosts([...posts]);
     }
   };
 
   return (
     <PostContext.Provider
-      value={{ posts, postFetchErrors, getPosts, postsLoading, addNewPost, setUserFetchErrors }}
+      value={{
+        posts,
+        postFetchErrors,
+        getPosts,
+        postsLoading,
+        addNewPost,
+        setPostFetchErrors,
+        setPosts,
+      }}
     >
       {children}
     </PostContext.Provider>

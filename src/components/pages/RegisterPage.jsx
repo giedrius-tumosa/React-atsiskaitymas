@@ -1,6 +1,7 @@
 import HeaderInitial from "../header/HeaderInitial";
 import FormNewUser from "../forms/FormNewUser";
 import Heading from "../global/Heading";
+import Footer from "../footer/Footer";
 
 const RegisterPage = () => {
   return (
@@ -14,6 +15,7 @@ const RegisterPage = () => {
         />
         <FormNewUser />
       </main>
+      <Footer />
     </>
   );
 };

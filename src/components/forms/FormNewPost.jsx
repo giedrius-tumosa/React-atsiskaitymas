@@ -4,7 +4,7 @@ import PostContext from "../../store/PostContext";
 import { useEffect } from "react";
 
 const FormNewPost = () => {
-  const { addNewPost, postFetchErrors, setUserFetchErrors } = useContext(PostContext);
+  const { addNewPost, postFetchErrors, setPostFetchErrors } = useContext(PostContext);
 
   const [formInputs, setFormInputs] = useState({
     postTitle: "",
@@ -30,7 +30,7 @@ const FormNewPost = () => {
   };
 
   useEffect(() => {
-    setUserFetchErrors({ ...postFetchErrors, postError: "" });
+    setPostFetchErrors({ ...postFetchErrors, postError: "" });
   }, []);
 
   return (
@@ -46,7 +46,7 @@ const FormNewPost = () => {
             value={formInputs.postTitle}
             required
             minLength={2}
-            maxLength={50}
+            maxLength={40}
           />
         </div>
 
@@ -59,7 +59,7 @@ const FormNewPost = () => {
             value={formInputs.postDescription}
             required
             minLength={2}
-            maxLength={250}
+            maxLength={100}
           />
         </div>
 

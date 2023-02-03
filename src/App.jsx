@@ -6,13 +6,17 @@ import HomePage from "./components/pages/HomePage";
 import AddPostPage from "./components/pages/AddPostPage";
 import NotFound from "./components/pages/NotFound";
 import UserContext from "./store/UserContext";
+import PostContext from "./store/PostContext";
 import { useContext, useEffect } from "react";
 
 function App() {
-  const { getUsers, users } = useContext(UserContext);
+  const { getUsers } = useContext(UserContext);
+  const { getPosts, setPosts } = useContext(PostContext);
 
   useEffect(() => {
+    setPosts([]);
     getUsers();
+    getPosts();
   }, []);
 
   return (
@@ -30,3 +34,14 @@ function App() {
 }
 
 export default App;
+
+/*
+TODO:
+*styling
+*patikrinti formu functionalities
+*readme file
+*mockups
+*klaidu stilius
+*pasibandyti kitokius route su login register puslapiais????
+*suziuret ar nera nenaudojamu variables
+*/

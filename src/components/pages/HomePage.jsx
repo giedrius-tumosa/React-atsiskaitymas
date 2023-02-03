@@ -1,10 +1,10 @@
-import { Navigate, Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import HeaderUser from "../header/HeaderUser";
 import PostDisplay from "../posts/PostsDisplay";
 import UserContext from "../../store/UserContext";
-import { useContext } from "react";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Footer from "../footer/Footer";
 
 const HomePage = () => {
   const { userLoggedIn } = useContext(UserContext);
@@ -26,6 +26,7 @@ const HomePage = () => {
             <Outlet />
             <PostDisplay />
           </main>
+          <Footer />
         </>
       )}
       {!userLoggedIn && (

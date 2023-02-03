@@ -2,9 +2,9 @@ import FigureImage from "../global/FigureImage";
 import styles from "./logo.module.scss";
 import { Link } from "react-router-dom";
 
-const Logo = () => {
+const Logo = ({ to }) => {
   return (
-    <Link to="/">
+    <Link to={to}>
       <FigureImage
         className={styles.logoImage}
         attributes={{

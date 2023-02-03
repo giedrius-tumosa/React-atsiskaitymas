@@ -1,6 +1,7 @@
 import HeaderInitial from "../header/HeaderInitial";
 import FormUserLogin from "../forms/FormUserLogin";
 import Heading from "../global/Heading";
+import Footer from "../footer/Footer";
 
 const LoginPage = () => {
   return (
@@ -14,6 +15,7 @@ const LoginPage = () => {
         />
         <FormUserLogin />
       </main>
+      <Footer />
     </>
   );
 };

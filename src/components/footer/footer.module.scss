@@ -1,0 +1,13 @@
+@use "../../styles/variables" as v;
+
+.footer {
+  height: v.$footer-height;
+  display: grid;
+  place-content: center;
+  position: sticky;
+  bottom: 0;
+  background-color: v.$color-theme-secondary;
+  padding-inline: v.$padding-inline-global;
+  color: v.$color-font-secondary;
+  font-weight: 600;
+}

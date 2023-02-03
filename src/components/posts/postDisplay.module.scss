@@ -1,0 +1,7 @@
+.postsDisplay {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  justify-content: center;
+  gap: 1rem;
+  padding-block: 0.5rem;
+}

@@ -8,4 +8,62 @@
 
 #root {
   font-family: v.$font-family-global;
+  // padding-inline: v.$padding-inline-global;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// General styles
+
+body {
+  min-height: 100vh;
+  width: min(1000px, 100%);
+  margin: 0 auto;
+  background-color: v.$color-theme-dark;
+  color: v.$color-font-theme;
+}
+
+main {
+  padding: v.$padding-block-global;
+  flex: 1;
+}
+
+form {
+  :is(label, input, textarea, button) {
+    margin-block: 0.5rem;
+  }
+}
+
+button {
+  padding: v.$button-padding;
+  background-color: v.$color-theme;
+  color: v.$color-font-theme;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 600;
+
+  &:hover {
+    color: v.$color-theme-dark;
+    background-color: v.$color-theme-bright;
+  }
+}
+input,
+textarea {
+  border-radius: 3px;
+  border: none;
+}
+a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: v.$color-font-secondary;
+  &:is(:hover, :focus) {
+    text-decoration: underline;
+    color: v.$color-theme;
+  }
+  &:focus {
+    outline: 2px solid v.$color-font-secondary;
+    outline-offset: 3px;
+  }
 }
