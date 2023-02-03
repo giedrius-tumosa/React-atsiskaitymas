@@ -7,7 +7,7 @@ import Heading from "../global/Heading";
 import PostContext from "../../store/PostContext";
 
 const HeaderUser = () => {
-  const { userLoggedIn, setUserLoggedIn } = useContext(UserContext);
+  const { setUserLoggedIn } = useContext(UserContext);
   const { setPosts } = useContext(PostContext);
   const navigate = useNavigate();
 

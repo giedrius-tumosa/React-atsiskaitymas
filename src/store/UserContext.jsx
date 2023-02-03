@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { createContext, useState } from "react";
 
 const ENDPOINT_USERS = "http://localhost:5000/users";

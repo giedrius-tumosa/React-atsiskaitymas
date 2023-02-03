@@ -6,15 +6,12 @@ import HomePage from "./components/pages/HomePage";
 import AddPostPage from "./components/pages/AddPostPage";
 import NotFound from "./components/pages/NotFound";
 import UserContext from "./store/UserContext";
-import PostContext from "./store/PostContext";
 import { useContext, useEffect } from "react";
 
 function App() {
   const { getUsers } = useContext(UserContext);
-  const { getPosts, setPosts } = useContext(PostContext);
 
   useEffect(() => {
-    setPosts([]);
     getUsers();
   }, []);
 

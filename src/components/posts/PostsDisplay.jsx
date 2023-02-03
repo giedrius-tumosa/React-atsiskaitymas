@@ -24,24 +24,8 @@ const PostsDisplay = () => {
       {!postsLoading &&
         !postFetchErrors.getError &&
         posts.map((post) => <Post key={post.id} post={post} />)}
-      {!postsLoading && posts.length === 0 && <ErrorMessage message="There are no items posted." />}
     </section>
   );
 };
 
 export default PostsDisplay;
-
-{
-  /* todo 
-  :<section className={styles.postsDisplay}>
-{postsLoading ? (
-  <Loading />
-) : postFetchErrors.getError ? (
-  <ErrorMessage message={postFetchErrors.getError} />
-) : !posts.length === 0 ? (
-  posts.map((post) => <Post key={post.id} post={post} />)
-) : (
-  <ErrorMessage message="There are no items posted." />
-)}
-</section> */
-}

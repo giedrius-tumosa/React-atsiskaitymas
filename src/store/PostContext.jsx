@@ -14,11 +14,13 @@ const PostProvider = ({ children }) => {
 
   const getPosts = async () => {
     try {
+      setPostFetchErrors({ ...postFetchErrors, getError: "" });
       setPostsLoading(true);
       const response = await fetch(ENDPOINT_POSTS);
       if (!response.ok) throw Error("Posts could not be retrieved from the server. Try later.");
       const postsData = await response.json();
       setPosts(postsData);
+      if (postsData.length === 0) throw Error("NO POSTS");
       setPostFetchErrors({ ...postFetchErrors, getError: "" });
     } catch (error) {
       setPostFetchErrors({ ...postFetchErrors, getError: error.message });

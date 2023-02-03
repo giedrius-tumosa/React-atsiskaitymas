@@ -16,5 +16,46 @@
       "userPassword": "telefonas20"
     }
   ],
-  "posts": []
+  "posts": [
+    {
+      "id": "KyqaVn8nsXAf4Z3e5_kPd",
+      "postTitle": "Maximos nuolaidos!",
+      "postDescription": "Prekybos centre Big, Ukmerges g. Vilniuje, Maxima pardavineja kojines po 50ct. Greitai nebeliks."
+    },
+    {
+      "id": "dddd",
+      "postTitle": "Rimi akcija bananams",
+      "postDescription": "Skubekite i Rimi kalvariju gatveje, Vilnius. Bananai tik 0.8 centu!"
+    },
+    {
+      "id": "aaaa",
+      "postTitle": "IKEA isparduoda baldus",
+      "postDescription": "Tik si savaitgali IKEA skelbia isparduodanti baldus 50% nuolaida."
+    },
+    {
+      "id": "d4XJfB3uaaS50JqDLvTP6",
+      "postTitle": "Forum cinemas nuolaidos",
+      "postDescription": "Vakar pirkau labai pigiai kino bilietus forumcinemas. Gal dar yra!"
+    },
+    {
+      "id": "8f0UHIqozRq9Ffq2OVJ-A",
+      "postTitle": "Akcija guminukams",
+      "postDescription": "Assorti Vilniaus outlete guminukams 50% nuolaida."
+    },
+    {
+      "id": "yfAFZIZOJuibsYXgW9ckY",
+      "postTitle": "Benzinas pigiau",
+      "postDescription": "Circle K paleido nuolaidas benzinui! Ir dar kavos gaunat!"
+    },
+    {
+      "id": "hP2Vt1EvfAJXElif-MfqR",
+      "postTitle": "Keliauk i Londona pigiau",
+      "postDescription": "Ryanair puslapyje maciau labai pigius skrydzius i Londona. Paskubekit!"
+    },
+    {
+      "id": "-SSrCM3VB92ScNbUnWE4B",
+      "postTitle": "Cipsams nuolaidos",
+      "postDescription": "Rimi cipsams nuolaidos."
+    }
+  ]
 }
