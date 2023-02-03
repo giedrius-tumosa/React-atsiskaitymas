@@ -1,6 +1,6 @@
 .newPostSection {
   overflow-y: hidden;
-  height: 250px;
+  height: 270px;
 }
 .expand {
   animation: 1s ease-in-out expand;
@@ -15,16 +15,6 @@
     height: 0px;
   }
   100% {
-    height: 250px;
-  }
-}
-
-@keyframes condense {
-  0% {
-    height: 250px;
-  }
-
-  100% {
-    height: 0px;
+    height: 270px;
   }
 }

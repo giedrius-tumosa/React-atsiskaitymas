@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import { nanoid } from "nanoid";
 import PostContext from "../../store/PostContext";
 import { useEffect } from "react";
+import ErrorMessage from "../other/ErrorMessage";
 
 const FormNewPost = () => {
   const { addNewPost, postFetchErrors, setPostFetchErrors } = useContext(PostContext);
@@ -67,7 +68,7 @@ const FormNewPost = () => {
           <button type="submit">Add post</button>
         </div>
       </form>
-      {postFetchErrors.postError && <p>{postFetchErrors.postError}</p>}
+      {postFetchErrors.postError && <ErrorMessage message={postFetchErrors.postError} />}
     </div>
   );
 };
