@@ -4,13 +4,16 @@ import UserContext from "../../store/UserContext";
 import { useContext } from "react";
 import styles from "./header.module.scss";
 import Heading from "../global/Heading";
+import PostContext from "../../store/PostContext";
 
 const HeaderUser = () => {
   const { userLoggedIn, setUserLoggedIn } = useContext(UserContext);
+  const { setPosts } = useContext(PostContext);
   const navigate = useNavigate();
 
   const handleLogout = () => {
     navigate("/");
+    setPosts([]);
     setUserLoggedIn(false);
   };
 

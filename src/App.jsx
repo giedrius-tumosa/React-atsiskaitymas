@@ -16,7 +16,6 @@ function App() {
   useEffect(() => {
     setPosts([]);
     getUsers();
-    getPosts();
   }, []);
 
   return (

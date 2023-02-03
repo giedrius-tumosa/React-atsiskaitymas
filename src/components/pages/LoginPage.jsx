@@ -14,6 +14,9 @@ const LoginPage = () => {
           textContent="Login in to your account:"
         />
         <FormUserLogin />
+        <div className="heroHeadingWrap">
+          <Heading tag="h1" textContent="Saw a discount? Let everyone else know!" />
+        </div>
       </main>
       <Footer />
     </>

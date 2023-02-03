@@ -6,7 +6,7 @@ const PostContext = createContext();
 
 const PostProvider = ({ children }) => {
   const [posts, setPosts] = useState([]);
-  const [postsLoading, setPostsLoading] = useState(false);
+  const [postsLoading, setPostsLoading] = useState(true);
   const [postFetchErrors, setPostFetchErrors] = useState({
     getError: "",
     postError: "",

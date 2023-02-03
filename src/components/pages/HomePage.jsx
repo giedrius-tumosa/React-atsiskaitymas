@@ -31,11 +31,13 @@ const HomePage = () => {
       )}
       {!userLoggedIn && (
         <>
-          <p>
-            Please login to view the content. You will be redirected to the login page shortly. If
-            you are not redirected, please use the link below.
-          </p>
-          <Link to="/">Login</Link>
+          <div className="unauthorizedMessage">
+            <p>
+              Please login to view the content. You will be redirected to the login page shortly. If
+              you are not redirected, please use the link below.
+            </p>
+            <Link to="/">Login</Link>
+          </div>
         </>
       )}
     </>

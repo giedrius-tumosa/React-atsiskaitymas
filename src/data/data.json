@@ -16,51 +16,5 @@
       "userPassword": "telefonas20"
     }
   ],
-  "posts": [
-    {
-      "id": "KyqaVn8nsXAf4Z3e5_kPd",
-      "postTitle": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-      "postDescription": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-    },
-    {
-      "id": "dddd",
-      "postTitle": "Rimi akcija bananams",
-      "postDescription": "Skubekite i Rimi kalvariju gatveje, Vilnius. Bananai tik 0.8 centu!"
-    },
-    {
-      "id": "aaaa",
-      "postTitle": "IKEA isparduoda baldus",
-      "postDescription": "Tik si savaitgali IKEA skelbia isparduodanti baldus 50% nuolaida."
-    },
-    {
-      "id": "d4XJfB3uaaS50JqDLvTP6",
-      "postTitle": "NAUJAS",
-      "postDescription": "Kaip gyveni?"
-    },
-    {
-      "id": "8f0UHIqozRq9Ffq2OVJ-A",
-      "postTitle": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-      "postDescription": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgggg"
-    },
-    {
-      "id": "yfAFZIZOJuibsYXgW9ckY",
-      "postTitle": "KLAIPEDA CALLING",
-      "postDescription": "kaip laikosi klaipeda? taralalalalala"
-    },
-    {
-      "id": "hP2Vt1EvfAJXElif-MfqR",
-      "postTitle": "Vilnius calling",
-      "postDescription": "VIlnius"
-    },
-    {
-      "id": "ypaop37l2dbSaHCbp9j7Q",
-      "postTitle": "LONDONAS",
-      "postDescription": "LONDONAS"
-    },
-    {
-      "id": "Gz_KYyNsjn-bK2CQ1kR6T",
-      "postTitle": "TAURAGE",
-      "postDescription": "Skambina varpais."
-    }
-  ]
+  "posts": []
 }

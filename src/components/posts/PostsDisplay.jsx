@@ -1,6 +1,6 @@
 import Post from "./Post";
 import PostContext from "../../store/PostContext";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import Loading from "./Loading";
 import styles from "./postDisplay.module.scss";
 import ErrorMessage from "../other/ErrorMessage";
@@ -24,6 +24,7 @@ const PostsDisplay = () => {
       {!postsLoading &&
         !postFetchErrors.getError &&
         posts.map((post) => <Post key={post.id} post={post} />)}
+      {!postsLoading && posts.length === 0 && <ErrorMessage message="There are no items posted." />}
     </section>
   );
 };
