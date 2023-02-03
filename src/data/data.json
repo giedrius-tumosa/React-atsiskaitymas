@@ -4,6 +4,11 @@
       "id": "545ddjdk",
       "userEmail": "j.smith@gmail.com",
       "userPassword": "pass2000"
+    },
+    {
+      "id": "WzPm6eF9NoDAF5GIasoi9",
+      "userEmail": "krabas@gmail.com",
+      "userPassword": "klaipeda20"
     }
   ],
   "posts": [
@@ -16,6 +21,21 @@
       "id": "aaaa",
       "postTitle": "IKEA isparduoda baldus",
       "postDescription": "Tik si savaitgali IKEA skelbia isparduodanti baldus 50% nuolaida."
+    },
+    {
+      "id": "d4XJfB3uaaS50JqDLvTP6",
+      "postTitle": "NAUJAS",
+      "postDescription": "Kaip gyveni?"
+    },
+    {
+      "id": "yfAFZIZOJuibsYXgW9ckY",
+      "postTitle": "KLAIPEDA CALLING",
+      "postDescription": "kaip laikosi klaipeda? taralalalalala"
+    },
+    {
+      "id": "hP2Vt1EvfAJXElif-MfqR",
+      "postTitle": "Vilnius calling",
+      "postDescription": "VIlnius"
     }
   ]
 }

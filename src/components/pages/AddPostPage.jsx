@@ -4,16 +4,14 @@ import styles from "./addPostPage.module.scss";
 
 const AddPostPage = () => {
   return (
-    <>
-      <section className={styles.newPostSection}>
-        <Heading
-          tag="h2"
-          attributes={{ className: "formHeading" }}
-          textContent="Add new post here:"
-        />
-        <FormNewPost />
-      </section>
-    </>
+    <section className={styles.newPostSection}>
+      <Heading
+        tag="h2"
+        attributes={{ className: "formHeading" }}
+        textContent="Add new post here:"
+      />
+      <FormNewPost />
+    </section>
   );
 };
 

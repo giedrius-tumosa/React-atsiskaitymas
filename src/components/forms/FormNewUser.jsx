@@ -1,12 +1,19 @@
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
 import { nanoid } from "nanoid";
+import UserContext from "../../store/UserContext";
+import { useNavigate } from "react-router-dom";
 
 const FormNewUser = () => {
+  const { addNewUser, users, setUserLoggedIn, userLoggedIn } = useContext(UserContext);
+
+  const navigate = useNavigate();
+
   const [formInputs, setFormInputs] = useState({
     userEmail: "",
     userPassword: "",
     userPasswordRepeat: "",
   });
+
   const [formError, setFormError] = useState("");
 
   const handleInputChange = (e) => {
@@ -15,6 +22,12 @@ const FormNewUser = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const userExists = users.some((user) => formInputs.userEmail === user.userEmail);
+    if (userExists) {
+      setFormError(`User with email ${formInputs.userEmail} already exists.`);
+      return;
+    }
     if (formInputs.userPassword !== formInputs.userPasswordRepeat) {
       setFormError("Original and repeated passwords do not match.");
       return;
@@ -25,13 +38,18 @@ const FormNewUser = () => {
       userEmail: formInputs.userEmail,
       userPassword: formInputs.userPassword,
     };
-    console.log(newUser); //TODO: delete
+    addNewUser(newUser);
+    setUserLoggedIn(true);
     setFormInputs({
       userEmail: "",
       userPassword: "",
       userPasswordRepeat: "",
     });
   };
+
+  useEffect(() => {
+    userLoggedIn && navigate("/home");
+  }, [userLoggedIn]);
 
   return (
     <div className="formNewUser">

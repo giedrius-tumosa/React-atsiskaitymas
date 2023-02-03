@@ -1,7 +1,11 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { nanoid } from "nanoid";
+import PostContext from "../../store/PostContext";
+import { useEffect } from "react";
 
 const FormNewPost = () => {
+  const { addNewPost, postFetchErrors, setUserFetchErrors } = useContext(PostContext);
+
   const [formInputs, setFormInputs] = useState({
     postTitle: "",
     postDescription: "",
@@ -18,12 +22,16 @@ const FormNewPost = () => {
       postTitle: formInputs.postTitle,
       postDescription: formInputs.postDescription,
     };
-    console.log(newPost); //TODO: delete
+    addNewPost(newPost);
     setFormInputs({
       postTitle: "",
       postDescription: "",
     });
   };
+
+  useEffect(() => {
+    setUserFetchErrors({ ...postFetchErrors, postError: "" });
+  }, []);
 
   return (
     <div className="formNewPost">
@@ -59,6 +67,7 @@ const FormNewPost = () => {
           <button type="submit">Add post</button>
         </div>
       </form>
+      {postFetchErrors.postError && <p>{postFetchErrors.postError}</p>}
     </div>
   );
 };

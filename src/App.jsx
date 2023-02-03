@@ -5,8 +5,16 @@ import RegisterPage from "./components/pages/RegisterPage";
 import HomePage from "./components/pages/HomePage";
 import AddPostPage from "./components/pages/AddPostPage";
 import NotFound from "./components/pages/NotFound";
+import UserContext from "./store/UserContext";
+import { useContext, useEffect } from "react";
 
 function App() {
+  const { getUsers, users } = useContext(UserContext);
+
+  useEffect(() => {
+    getUsers();
+  }, []);
+
   return (
     <>
       <Routes>

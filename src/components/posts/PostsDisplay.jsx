@@ -4,9 +4,11 @@ import { useContext, useEffect } from "react";
 import Loading from "./Loading";
 
 const PostsDisplay = () => {
-  const { posts, postsError, getPosts, postsLoading } = useContext(PostContext);
+  const { posts, postFetchErrors, getPosts, postsLoading, setUserFetchErrors } =
+    useContext(PostContext);
 
   useEffect(() => {
+    setUserFetchErrors({ ...postFetchErrors, getError: "" });
     getPosts();
   }, []);
 
@@ -14,7 +16,7 @@ const PostsDisplay = () => {
     <section className="postsDisplay">
       {!postsLoading && posts.map((post) => <Post key={post.id} post={post} />)}
       {postsLoading && <Loading />}
-      {postsError && <p>{postsError}</p>}
+      {postFetchErrors.getError && <p>{postFetchErrors.getError}</p>}
     </section>
   );
 };
